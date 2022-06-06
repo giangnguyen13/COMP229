@@ -1,0 +1,25 @@
+<%- include components/header.ejs %>
+<%- include components/main_nav.ejs %>
+  
+  <!-- Home Content -->
+  <main class="masthead text-center text-black">
+    <div class="masthead-content">
+      <div class="container">
+        <% if(contactName){%>
+          <h1 class="masthead-heading">Hello <%= contactName %>, to my first assignment!</h1>
+        <%}else{%>
+          <h1 class="masthead-heading">Hello, to my assignment!</h1>
+        <%}%>
+        <h2 class="masthead-subheading">COMP229 - Web application development</h2>
+        <h3 class="masthead-subsubheading">
+          The mission of this site is to achieve the highest standards in web development. 
+        </h3>
+        <a href="/about" class="btn btn-primary btn-xl rounded-pill mt-5">About Me</a>
+        <a href="/contact" class="btn btn-primary btn-xl rounded-pill mt-5">Contact Me</a>
+      </div>
+    </div>
+  </main>
+  <!-- End Home Content -->
+  
+<%- include components/bottom_nav.ejs %>  
+<%- include components/footer.ejs %>
